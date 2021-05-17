@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 locale: "en-US"
-title: Vinay1 | Data Scientist
+title: Vinay | Data Scientist
 email: sammangi.vinay@gmail.com
 url: https://vinaysammangi.github.io
 repository: "VinaySammangi/vinaysammangi.github.io"
