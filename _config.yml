@@ -13,20 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-locale: "en-US"
-title: Vinay | Data Scientist
-email: sammangi.vinay@gmail.com
-url: https://vinaysammangi.github.io
-repository: "VinaySammangi/vinaysammangi.github.io"
-words_per_minute: 160
-read_more: "disabled"
-breadcrumbs: false # true, false (default)
-description: >- # this means to ignore newlines until "baseurl:"
-  Data Scientist
-twitter_username: hitman_vinay
-github_username: VinaySammangi
-minimal_mistakes_skin: default
-search: true
+locale                   : "en-US"
+title                    : "Vinay Sammangi"
+title_separator          : "-"
+name                     : &name "Vinay Sammangi"
+description              : &description "Data Scientist"
+url                      : https://vinaysammangi.github.io
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "VinaySammangi/vinaysammangi.github.io"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 160
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -84,42 +81,12 @@ analytics:
   google:
     tracking_id          : "UA-79273-2"
 
-# # Build settings
-# markdown: kramdown
-# remote_theme: mmistakes/minimal-mistakes
-# # Outputting
-# permalink: /:categories/:title/
-# paginate: 6 # amount of posts to show
-# paginate_path: /page:num/
-# timezone: Asia/Calcutta # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
 
 # Site Author
 author:
   name             : "Vinay Sammangi"
   avatar           : "vinay_pic.png"
-  bio              : "Currently working as a Data Scientist at Aditya Birla Group. I am also an avid researcher and have authored several ML publications."
+  bio              : "Data Scientist at Aditya Birla Group. <br> <br> I am also an avid researcher and have authored several ML publications."
   location         : "Bangalore, India"
   employer         : 
   googlescholar    : "https://scholar.google.com/citations?user=VVHnMHAAAAAJ&hl=en"
@@ -209,10 +176,20 @@ kramdown:
 
 # Collections
 collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
   articles:
     output: true
     permalink: /:collection/:path/
+  expressions:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
 
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -227,11 +204,21 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      read_time: false
+      author_profile: true
+      share: false
+      comments: false
   # _articles
   - scope:
       path: ""
@@ -241,18 +228,29 @@ defaults:
       author_profile: true
       share: true
       comments: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
+  # _expressions
+  - scope:
+      path: ""
+      type: expressions
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+      
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
 
 # Outputting
 permalink: /:categories/:title/
