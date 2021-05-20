@@ -20,12 +20,43 @@ url: https://vinaysammangi.github.io
 repository: "VinaySammangi/vinaysammangi.github.io"
 words_per_minute: 160
 read_more: "disabled"
+breadcrumbs: false # true, false (default)
 description: >- # this means to ignore newlines until "baseurl:"
   Data Scientist
 twitter_username: hitman_vinay
 github_username: VinaySammangi
 minimal_mistakes_skin: default
 search: true
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages" # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+read_more                : "enabled" # if enabled, adds a "read more" link to excerpts 
+future                   : true
 
 # Build settings
 markdown: kramdown
