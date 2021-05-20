@@ -1,14 +1,14 @@
 # main links links
 main:
-- title: "Portfolio"
+  - title: "Expressions"
     url: /expressions/
 
-- title: "Blogs"
+  - title: "Blogs"
     url: /year-archive/
 
-- title: "Publications"
+  - title: "Publications"
     url: /articles/
-  
+
   # - title: "Talks"
   #   url: /talks/    
     
