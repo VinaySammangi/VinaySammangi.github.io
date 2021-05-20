@@ -118,7 +118,7 @@ plugins:
 # Site Author
 author:
   name             : "Vinay Sammangi"
-  avatar           : "/assets/images/vinay_pic.png"
+  avatar           : "vinay_pic.png"
   bio              : "Currently working as a Data Scientist at Aditya Birla Group. I am also an avid researcher and have authored several ML publications."
   location         : "Bangalore, India"
   employer         : 
