@@ -11,7 +11,7 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-
+<div style="text-align: justify"> 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item">
     {% if include.type == "grid" and teaser %}
@@ -60,4 +60,5 @@
     {% endif %}
 
   </article>
+</div>
 </div>
