@@ -6,6 +6,9 @@ author_profile: true
 redirect_from: 
   - "/wordpress/"
   - "/wordpress/index.html"
+toc: true
+toc_label: "Contents"
+toc_icon: "cog"
 ---
 
 {% include base_path %}
