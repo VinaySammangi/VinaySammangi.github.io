@@ -3,7 +3,7 @@ title: "Text Mining-Based Association Rule Mining for Incident Analysis: A Case 
 category: articles
 permalink: /articles/2021-02-22-arm-application-medprai2020/
 excerpt: "We proposed a new methodological approach to extract useful inherent patterns or rules for accident causation using association rule mining (ARM) of both incident narratives (unstructured texts) and categorical data."
-venue: "Pattern Recognition and Artificial Intelligence (MedPRAI 2020)"
+venue: "Pattern Recognition and Artificial Intelligence (MedPRAI)"
 date: 2021-02-22
 ---
 
