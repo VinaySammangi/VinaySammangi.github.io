@@ -16,7 +16,7 @@ main:
   #   url: /teaching/
 
   - title: "CV"
-    url: /cv/
+    url: /me/
 
   - title: "Contact"
     url: /contact/
