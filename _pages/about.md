@@ -3,13 +3,11 @@ permalink: /
 title: "About"
 excerpt: "About me"
 author_profile: true
-toc: true
-toc_label: "Contents"
-toc_icon: "cog"
 redirect_from: 
   - "/wordpress/"
   - "/wordpress/index.html"
 ---
+{% include toc %}
 
 {% include base_path %}
 <div align="justify">
