@@ -1,7 +1,7 @@
 ---
 # layout: archive
-title: "CV2"
-permalink: /me/
+title: "CV"
+permalink: /resume/
 # author_profile: true
 # redirect_from:
 #   - /wordpress/cv/
