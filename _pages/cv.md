@@ -1,9 +1,9 @@
 ---
-layout: archive
-title: "CV"
+# layout: archive
+title: "CV1"
 permalink: /me/
-author_profile: true
-redirect_from:
-  - /wordpress/cv/
+# author_profile: true
+# redirect_from:
+#   - /wordpress/cv/
 ---
 
