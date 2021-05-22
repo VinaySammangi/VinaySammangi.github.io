@@ -9,7 +9,9 @@ redirect_from:
 ---
 {% include base_path %}
 
-<div align="center">
+<!-- <div align="center"> -->
+<div style="text-align: justify">
+ 
 Hi! I’m Vinay Sammangi, Data Scientist at the Group Data and Analytics, [Aditya Birla Group](https://www.adityabirla.com). I’m an interpretive social scientist by training with a background in the humanities, but I have just enough expertise in computer science and data science to make trouble. My research, teaching, and broader service are all grounded in the idea that science and technology are inherently social activities, which are directed, operated, and maintained (or not) in certain ways and not others, by people in and between institutions.
 
 ## My work and research
