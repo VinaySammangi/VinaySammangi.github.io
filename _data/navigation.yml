@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "Expressions"
-    url: /expressions/
+  # - title: "Expressions"
+  #   url: /expressions/
 
   - title: "Blogs"
     url: /year-archive/
