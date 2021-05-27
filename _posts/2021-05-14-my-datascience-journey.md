@@ -9,7 +9,7 @@ excerpt: Data Science is not just about building advanced models but solving the
 
 ---
 
-![Cover Page](/assets/images/collage.jpg)
+![Cover Page](/images/collage.jpg)
 
 *Data Science is not just about building advanced models but solving the problem and enhancing the existing process.*
 
